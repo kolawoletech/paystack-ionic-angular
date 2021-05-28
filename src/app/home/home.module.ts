@@ -10,7 +10,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 @NgModule({
   imports: [
-    Angular4PaystackModule.forRoot('pk_test_beaf8a50a1e76261f013e0201f1fa63e8b67d353'),
+    Angular4PaystackModule.forRoot('k_test_beaf8a50a1e76261f013e0201f1fa63e8b67d353'),
 
     CommonModule,
     FormsModule,
