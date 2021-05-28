@@ -14,7 +14,21 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+<!--     <button angular4-paystack [key]="'pk_test_beaf8a50a1e76261f013e0201f1fa63e8b67d353'"
+      [email]="'mailexample@mail.com'" [amount]="5000000" [ref]="reference" [class]="'btn btn-primary'"
+      (paymentInit)="paymentInit()" (onClose)="paymentCancel()" (callback)="paymentDone($event)">
+      Pay with Paystack
+    </button> -->
+
+    <button
+    angular4-paystack
+    [paystackOptions]="options"
+    (paymentInit)="paymentInit()"
+    (onClose)="paymentCancel()"
+    (callback)="paymentDone($event)"
+  >
+    Pay with Paystack
+  </button>
   </div>
 </ion-content>
